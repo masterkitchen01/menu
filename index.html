@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Kitchen Master Gallery</title>
     <style>
       body {
@@ -35,8 +39,9 @@
         background: #fff;
       }
       .contact-info {
+        width: 100%;
         position: absolute;
-        bottom: -9rem;
+        bottom: 1rem;
         font-size: 1.8rem;
         font-weight: bolder;
         padding: 0rem 4rem;
@@ -47,16 +52,46 @@
         text-decoration: none;
         margin-left: 10px;
       }
+      .location-link {
+        color: #fec305;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin-bottom: 0.5rem;
+      }
+      .location-link strong {
+        margin-right: 0.5rem;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="gallery">
-        <img src="images/master kitchen_page-0001.jpg" alt="Kitchen Page 1" />
-        <address class="contact-info">
-          <strong>&#9743;</strong>
-          <a href="tel:+966131234567">+966 13 123 4567</a>
-        </address>
+        <div style="position: relative">
+          <img src="images/master kitchen_page-0001.jpg" alt="Kitchen Page 1" />
+          <address class="contact-info">
+            <div style="display: flex; align-items: center">
+              <i class="material-icons" style="font-size: 48px; color: #fec305"
+                >place</i
+              >
+              <a
+                href="https://maps.app.goo.gl/2yeznfBuBr5PXz9k7"
+                target="_blank"
+                rel="noopener"
+                class="location-link"
+              >
+                Bridgestone Road Behind The Chamber Of Commerce,<br />
+                Yanbu Al Bahr. Ksa
+              </a>
+            </div>
+            <div>
+              <strong>&#9743;</strong>
+              <a href="tel:+966131234567">+966 13 123 4567</a>
+            </div>
+          </address>
+        </div>
         <img src="images/master kitchen_page-0002.jpg" alt="Kitchen Page 2" />
         <img src="images/master kitchen_page-0003.jpg" alt="Kitchen Page 3" />
         <img src="images/master kitchen_page-0004.jpg" alt="Kitchen Page 4" />
