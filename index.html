@@ -52,6 +52,9 @@
         text-decoration: none;
         margin-left: 10px;
       }
+      .location:hover {
+        opacity: 0.8;
+      }
       .location-link {
         color: #fec305;
         text-decoration: none;
@@ -64,6 +67,10 @@
       .location-link strong {
         margin-right: 0.5rem;
       }
+
+      .phone:hover {
+        opacity: 0.8;
+      }
     </style>
   </head>
   <body>
@@ -72,7 +79,7 @@
         <div style="position: relative">
           <img src="images/master kitchen_page-0001.jpg" alt="Kitchen Page 1" />
           <address class="contact-info">
-            <div style="display: flex; align-items: center">
+            <div style="display: flex; align-items: center" class="location">
               <i class="material-icons" style="font-size: 48px; color: #fec305"
                 >place</i
               >
@@ -86,9 +93,10 @@
                 Yanbu Al Bahr. Ksa
               </a>
             </div>
-            <div style="display: flex; align-items: center">
-               <i class="material-icons" style="font-size: 38px; color: #fec305"
-                >phone_in_talk </i>
+            <div style="display: flex; align-items: center" class="phone">
+              <i class="material-icons" style="font-size: 38px; color: #fec305"
+                >phone_in_talk
+              </i>
 
               <a href="tel:+966131234567">+966 13 123 4567</a>
             </div>
