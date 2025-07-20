@@ -100,10 +100,95 @@
       }
       .phone:hover {
         opacity: 0.8;
-      } 
+      }
 
       .phone a {
         margin-left: 15px;
+      }
+      /* Contact Bar Styles */
+      .contact-bar {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: none;
+        background: rgba(122, 22, 34, 0.7); /* semi-transparent maroon */
+        color: #fec305;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0 1rem 0;
+        box-sizing: border-box;
+        z-index: 2;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+      }
+      .first-image-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .first-image-container img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 8px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        border: 1px solid #e0e0e0;
+        background: #fff;
+        display: block;
+        margin: 0 auto;
+      }
+      .contact-bar .contact-address {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8px;
+      }
+      .contact-bar .contact-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      .contact-bar .contact-row i {
+        color: #fec305;
+        font-size: 2rem;
+        margin-right: 0.5rem;
+      }
+      .contact-bar .contact-row span {
+        color: #fec305;
+        font-weight: bold;
+      }
+      .contact-bar .contact-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-top: 0;
+      }
+      .contact-bar .contact-btn {
+        background: #7a1622;
+        color: #fec305;
+        border: 2px solid #fec305;
+        border-radius: 32px;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+        min-width: unset;
+        white-space: nowrap;
+      }
+      .contact-bar .contact-btn i {
+        font-size: 1.1rem;
       }
       @media (max-width: 600px) {
         .container {
@@ -126,6 +211,27 @@
         }
         .phone .material-icons {
           font-size: 24px !important;
+        }
+        .contact-bar {
+          padding: 1rem 0.2rem;
+          font-size: 0.9rem;
+          bottom: -3rem;
+        }
+        .contact-bar .contact-row {
+          font-size: 12px;
+        }
+        .contact-bar .contact-btn {
+          font-size: 0.7rem;
+          padding: 0.15rem 0.3rem;
+        }
+        .contact-bar .contact-btn i,
+        .contact-bar .contact-btn svg {
+          font-size: 0.9rem !important;
+          width: 18px !important;
+          height: 18px !important;
+        }
+        .contact-bar .contact-buttons {
+          gap: 0.3rem;
         }
       }
       @media (max-width: 900px) {
@@ -162,31 +268,54 @@
   <body>
     <div class="container">
       <div class="gallery">
-        <div style="position: relative">
+        <div class="first-image-container">
           <img src="images/master kitchen_page-0001.jpg" alt="Kitchen Page 1" />
-          <address class="contact-info">
-            <div style="display: flex; align-items: center" class="location">
-              <i class="material-icons" style="font-size: 48px; color: #fec305"
-                >place</i
+          <div class="contact-bar">
+            <div class="contact-buttons">
+              <a href="https://www.instagram.com/masterkitchenyanbu?igsh=NWFkanc2NWozamhi" target="_blank" class="contact-btn"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 50 50"
+                  fill="#fec305"
+                >
+                  <path
+                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+                  ></path></svg
+                >INSTAGRAM</a
+              >
+              <a
+                href="https://www.facebook.com/share/194aD83cS7"
+                target="_blank"
+                class="contact-btn"
+                ><i class="material-icons">facebook</i>FACEBOOK</a
+              >
+              <a href="tel:050 589 4653" class="contact-btn"
+                ><i class="material-icons">phone_in_talk</i>050 589 4653</a
               >
               <a
                 href="https://maps.app.goo.gl/rWVQLSxStZH1bCXY9"
                 target="_blank"
-                rel="noopener"
-                class="location-link"
+                class="contact-btn"
+                ><i class="material-icons">place</i>LOCATION</a
               >
-                Bridgestone Road Behind The Chamber Of Commerce, Yanbu Al Bahr.
-                Ksa
-              </a>
             </div>
-            <div style="display: flex; align-items: center" class="phone">
-              <i class="material-icons" style="font-size: 38px; color: #fec305"
-                >phone_in_talk
-              </i>
-
-              <a href="tel:050 599 4653">050 599 4653</a>
+            <div class="contact-address">
+              <div
+                class="contact-row"
+                style="display: flex; flex-direction: row"
+              >
+                <i class="material-icons">place</i>
+                <span
+                  >Bridgestone Road Behind The Chamber Of Commerce, Yanbu Al
+                  Bahr.</span
+                >
+              </div>
             </div>
-          </address>
+          </div>
         </div>
         <img src="images/master kitchen_page-0002.jpg" alt="Kitchen Page 2" />
         <img src="images/master kitchen_page-0003.jpg" alt="Kitchen Page 3" />
