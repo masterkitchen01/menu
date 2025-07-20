@@ -19,6 +19,11 @@
         align-items: center;
         min-height: 100vh;
       }
+
+      a {
+        color: #fec305;
+        margin-left: 8px;
+      }
       .container {
         max-width: 800px;
         margin: 40px auto;
@@ -56,7 +61,7 @@
         bottom: 1rem;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 1.8rem;
+
         font-weight: bolder;
         padding: 0rem 4rem;
         color: #fec305;
@@ -65,11 +70,7 @@
         flex-direction: column;
         align-items: center;
       }
-      .contact-info a {
-        color: #fec305;
-        text-decoration: none;
-        margin-left: 10px;
-      }
+
       .location {
         display: flex;
         align-items: center;
@@ -84,7 +85,6 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        font-size: 1.3rem;
         font-weight: bolder;
         margin-bottom: 0.5rem;
         width: 100%;
@@ -112,17 +112,11 @@
           max-width: 100%;
         }
         .contact-info {
-          bottom: -0.1rem;
           margin-top: -4.5rem;
+          bottom: -5px;
         }
-        .contact-info a {
-          margin-left: 0px;
-          font-size: 12px !important;
-        }
-        .location-link {
-          font-size: 1rem;
-        }
-        .location .material-icons {
+
+        .contact-info div .material-icons {
           font-size: 32px !important;
         }
         .phone .material-icons {
@@ -138,12 +132,8 @@
           max-width: 100%;
         }
         .contact-info {
-          font-size: 1.3rem;
+          font-size: 13px;
           padding: 0.5rem 2rem;
-        }
-
-        .contact-info a {
-          font-size: 1rem;
         }
       }
     </style>
