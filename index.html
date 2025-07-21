@@ -108,9 +108,9 @@
       /* Contact Bar Styles */
       .contact-bar {
         position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 100%;
         max-width: none;
         background: rgba(122, 22, 34, 0.7); /* semi-transparent maroon */
@@ -120,9 +120,8 @@
         align-items: center;
         padding: 1.5rem 0 1rem 0;
         box-sizing: border-box;
-        z-index: 10;
+        z-index: 2;
         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-        transition: position 0.2s, top 0.2s;
       }
       .first-image-container {
         position: relative;
@@ -227,8 +226,7 @@
         .contact-bar {
           padding: 1rem 0.2rem;
           font-size: 0.9rem;
-          bottom: 0;
-          top: 0;
+          bottom: -3rem;
         }
         .contact-bar .contact-row {
           font-size: 12px;
@@ -289,7 +287,7 @@
                 target="_blank"
                 class="contact-btn"
                 ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 30 30" fill="#fec305">
-<path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
 </svg><span>INSTAGRAM</span></a
               >
               <a
@@ -297,11 +295,12 @@
                 target="_blank"
                 class="contact-btn"
                 ><i class="material-icons">facebook</i>
+
                 <span>FACEBOOK</span></a
               >
               <a href="tel:050 599 4653" class="contact-btn"
                 ><i class="material-icons">phone_in_talk</i>
-                <span>050 599 4653</span></a
+                </span>050 599 4653</span></a
               >
               <a
                 href="https://maps.app.goo.gl/rWVQLSxStZH1bCXY9"
@@ -311,9 +310,15 @@
               >
             </div>
             <div class="contact-address">
-              <div class="contact-row" style="display: flex; flex-direction: row">
+              <div
+                class="contact-row"
+                style="display: flex; flex-direction: row"
+              >
                 <i class="material-icons">place</i>
-                <span>Bridgestone Road Behind The Chamber Of Commerce, Yanbu Al Bahr.</span>
+                <span
+                  >Bridgestone Road Behind The Chamber Of Commerce, Yanbu Al
+                  Bahr.</span
+                >
               </div>
             </div>
           </div>
@@ -327,18 +332,5 @@
         <img src="images/master kitchen_page-0008.jpg" alt="Kitchen Page 8" />
       </div>
     </div>
-    <script>
-window.addEventListener('scroll', function() {
-  var bar = document.querySelector('.contact-bar');
-  var firstImage = document.querySelector('.first-image-container');
-  if (!bar || !firstImage) return;
-  var rect = firstImage.getBoundingClientRect();
-  if (rect.bottom <= 0) {
-    bar.classList.add('sticky-contact');
-  } else {
-    bar.classList.remove('sticky-contact');
-  }
-});
-</script>
   </body>
 </html>
